@@ -478,7 +478,7 @@ input:focus, textarea:focus {
     #contact .contact {
         width: 100%;
         padding-top: unset;
-        background-color: #ccc;
+        background-color: #ffffff;
     }
 
     #contact .contact .contact-info {
@@ -527,7 +527,6 @@ input:focus, textarea:focus {
 
     #contact .contact .form-div {
         max-width: 100%;
-        padding: 0px;
         margin-left: unset;
     }
 
