@@ -527,7 +527,7 @@ input:focus, textarea:focus {
 
     #contact .contact .form-div {
         max-width: 100%;
-        padding: 10px;
+        padding: 0px;
         margin-left: unset;
     }
 
