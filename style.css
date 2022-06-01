@@ -12,9 +12,15 @@ html, body {
     overflow-x: hidden;
 }
 
+main {
+    width: 100%;
+}
+
 #container {
-    display: flex;
     flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 header {
@@ -39,6 +45,12 @@ header .menu {
 
 .menu .menu-item a:hover {
     color: #FA5E45;
+}
+
+/* Home Page */
+
+#intro {
+    width: 100%;
 }
 
 #intro .intro {
@@ -170,8 +182,12 @@ footer {
     font-size: 1.5rem;
     font-weight: 700;
     width: 100%;
+    padding: 10px 5px;
 }
 
+/* Homepage Ended */
+
+/* Home Page Mobile Phone */
 
 @media screen and (max-width:720px) {
 
@@ -267,7 +283,7 @@ footer {
     }
     
     #content .content .second .image img {
-        width: 400px;
+        width: 600px;
         max-width: 100%;
         padding-bottom: 50px;
     }
@@ -343,4 +359,207 @@ footer {
         padding: 10px 50px;
     }
 
+    footer {
+        font-size: 1rem;
+    }
+}
+
+/* Homepage Mobile End */
+
+/* Contact us Page */
+
+#contact {
+    display: flex;
+    width: 100%;
+    padding-top: 50px;
+}
+
+#contact .contact {
+    width: 100%;
+    padding-top: 100px;
+    background-color: #ccc;
+}
+#contact .contact .contact-info {
+    background-color: #FA5E45;
+    padding: 25px 150px;
+    color: #ffffff;
+}
+
+#contact .contact .contact-info .info-item {
+    padding: 10px;
+}
+
+#contact .contact .contact-info .info-item .info-div {
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+#contact .contact .contact-info .info-item .info-div .icon-text {
+    padding-left: 25px;
+    font-size: 1.3rem;
+}
+
+#contact .contact .contact-info .info-item .contact-icon img {
+    width: 30px;
+}
+
+#contact .contact .contact-info .info-item .icon-desc {
+    font-size: 1rem;
+    padding-bottom: 20px;
+}
+
+/* Contact Form */
+
+#contact .contact .form-div {
+    width: 700px;
+    max-width: 100%;
+    padding: 50px;
+    margin-left: 500px;
+}
+
+#contact .contact .form-div .contact-form {
+    background-color: #ffffff ;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin-top: -500px;
+}
+
+#contact .contact .form-div .contact-form h1 {
+    font-size: 3rem;
+}
+
+#contact .contact .form-div .contact-form .submission {
+    border: thin solid #ccc;
+    padding: 2rem;
+}
+
+input, textarea {
+    font-size: 1rem;
+    display: block;
+    width: 100%;
+    margin: 2rem auto;
+    padding: .5rem;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid #000000;
+}
+
+input:focus, textarea:focus {
+    border-color: #FA5E45;
+  }
+
+.submit-btn {
+    margin: 0;
+    width: auto;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: thin solid #000000;
+}
+
+.submit-btn:hover {
+    background-color: #FA5E45;
+    color: #ffffff;
+    border: thin solid #FA5E45;
+}
+
+@media screen and (max-width:720px) {
+    /* Contact us Page Mobile */
+
+    #contact {
+        display: flex;
+        width: 100%;
+        padding-top: 50px;
+    }
+
+    #contact .contact {
+        width: 100%;
+        padding-top: unset;
+        background-color: #ccc;
+    }
+
+    #contact .contact .contact-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #FA5E45;
+        padding: 25px;
+        color: #ffffff;
+    }
+
+    #contact .contact .contact-info .info-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    #contact .contact .contact-info .info-item .info-div {
+        display: flex;
+        align-items: center;
+        padding-bottom: 15px;
+    }
+
+    #contact .contact .contact-info .info-item .info-div .icon-text {
+        padding-left: 25px;
+        font-size: 1.3rem;
+    }
+
+    #contact .contact .contact-info .info-item .contact-icon img {
+        width: 30px;
+    }
+
+    #contact .contact .contact-info .info-item .icon-desc {
+        font-size: 1rem;
+        padding-bottom: 20px;
+    }
+
+    #contact .contact .contact-info .info-item .icon-desc p {
+        text-align: center;
+    }
+
+    /* Form Mobile */
+
+    #contact .contact .form-div {
+        max-width: 100%;
+        padding: 10px;
+        margin-left: unset;
+    }
+
+    #contact .contact .form-div .contact-form {
+        margin-top: unset;
+    }
+
+    #contact .contact .form-div .contact-form h1 {
+        font-size: 1.3rem;
+    }
+
+    #contact .contact .form-div .contact-form .submission {
+        border: thin solid #ccc;
+        padding: 2rem;
+    }
+
+    input, textarea {
+        display: block;
+        width: 100%;
+        margin: 2rem auto;
+        padding: .5rem;
+        border: 0;
+        outline: 0;
+        border-bottom: 2px solid #000000;
+    }
+
+    input:focus, textarea:focus {
+        border-color: #FA5E45;
+    }
+
+    .submit-btn {
+        width: 100%;
+        padding: .5rem 1.5rem;
+    }
 }
