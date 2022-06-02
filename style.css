@@ -12,6 +12,24 @@ html, body {
     overflow-x: hidden;
 }
 
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    color: #ffffff;
+    background-color: #FA5E45;
+    font-size: 1.5rem;
+    font-weight: 700;
+    width: 100%;
+    padding: 10px 5px;
+}
+
 main {
     width: 100%;
 }
@@ -173,16 +191,6 @@ header .menu {
     background-color: #FA5E45;
     color: #ffffff;
     cursor: pointer;
-}
-
-footer {
-    text-align: center;
-    color: #ffffff;
-    background-color: #FA5E45;
-    font-size: 1.5rem;
-    font-weight: 700;
-    width: 100%;
-    padding: 10px 5px;
 }
 
 /* Homepage Ended */
@@ -637,7 +645,7 @@ footer {
 #sign-in .sign-in .signin-form .social-media {
     display: flex;
     justify-content: center;
-    padding-bottom: 70px;
+    padding-bottom: 100px;
 }
 
 #sign-in .sign-in .signin-form .social-media .social-icon {
