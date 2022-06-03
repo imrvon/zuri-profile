@@ -669,3 +669,19 @@ header .menu {
     color: #FA5E45;
     border-color: #d4412a;
 }
+
+/* Login Page Media Queries */
+
+@media screen and (max-width:720px) {
+    #sign-in .sign-in .signin-form {
+        padding: 80px 15px;
+    }
+    
+    #sign-in .sign-in .signin-form .input-field {
+        margin: 15px 0;
+    }
+    
+    #sign-in .sign-in .signin-form .social-signin {
+        padding: 1.3rem 0;
+    }
+}
