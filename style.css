@@ -20,14 +20,16 @@ html {
 footer {
     position: absolute;
     left: 0;
+    right: 0;
     bottom: 0;
     text-align: center;
     color: #ffffff;
     background-color: #FA5E45;
     font-size: 1.5rem;
     font-weight: 700;
-    width: 100%;
-    padding: 10px 5px;
+    width: 100vw;
+    height: auto;
+    padding: 20px 10px;
 }
 
 main {
@@ -225,11 +227,11 @@ header .menu {
     }
     
     #intro .intro h1 {
-        font-size: 5rem;
+        font-size: 4rem;
     }
     
     #intro .intro p {
-        font-size: 1.7rem;
+        font-size: 1.3rem;
     }
 
     .again {
@@ -422,7 +424,7 @@ header .menu {
 #contact .contact .form-div {
     width: 700px;
     max-width: 100%;
-    padding: 50px;
+    padding: 50px 50px 150px 50px;
     margin-left: 500px;
 }
 
@@ -495,7 +497,7 @@ header .menu {
         justify-content: center;
         align-items: center;
         background-color: #FA5E45;
-        padding: 25px;
+        padding: 15px;
         color: #ffffff;
     }
 
@@ -515,15 +517,15 @@ header .menu {
 
     #contact .contact .contact-info .info-item .info-div .icon-text {
         padding-left: 25px;
-        font-size: 1.3rem;
+        font-size: 2rem;
     }
 
     #contact .contact .contact-info .info-item .contact-icon img {
-        width: 30px;
+        width: 50px;
     }
 
     #contact .contact .contact-info .info-item .icon-desc {
-        font-size: 1rem;
+        font-size: 1.5rem;
         padding-bottom: 20px;
     }
 
@@ -535,6 +537,7 @@ header .menu {
 
     #contact .contact .form-div {
         max-width: 100%;
+        padding: 50px 10px 150px 10px;
         margin-left: unset;
     }
 
