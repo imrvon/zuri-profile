@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="container">
+        <header>
+            <nav class="menu">
+                <div class="menu-item"><a href="index.html"><p>About Me</p></a></div>
+                <div class="menu-item"><a href="contact.html"><p>Contact Me</p></a></div>
+                <div class="menu-item"><a href="register"><p>Register</p></a></div>
+                <div class="menu-item"><a href="login.html"><p>Log In</p></a></div>
+                <link rel="stylesheet" href="style.css">
+            </nav>
+        </header>
+
+        <main>
+            <section id="intro">
+                <div class="intro">
+                    <h1>REGISTER!</h1>
+                    <p>And access all the deliciousness!</p>
+                </div>
+            </section>
+
+            <section id="register">
+                <div class="register">
+
+                    <div class="total-form">
+                        <div class="form-container">                        
+                            <form action="" class="register-form">
+                                <div class="user-details">
+                                    <div class="input-field">
+                                        <span class="field-title">First Name</span>
+                                        <input type="text" placeholder="Enter your first name" required>
+                                    </div>
+
+                                    <div class="input-field">
+                                        <span class="field-title">Last Name</span>
+                                        <input type="text" placeholder="Enter your last name" required>
+                                    </div>
+
+                                    <div class="input-field">
+                                        <span class="field-title">Email</span>
+                                        <input type="email" placeholder="Enter your email" required>
+                                    </div>
+
+                                    <div class="input-field">
+                                        <span class="field-title">Phone Number</span>
+                                        <input type="tel" placeholder="Enter your phone number" required>
+                                    </div>
+
+                                    <div class="input-field">
+                                        <span class="field-title">Type of Account</span>
+                                        <select name="account-list" id="account" form="register-form" required>
+                                            <optgroup>
+                                                <option value="" selected disabled hidden>Select Account Type</option>
+                                                <option value="personal">Personal</option>
+                                                <option value="business">Business</option>
+                                            </optgroup>
+                                        </select>
+                                    </div>
+
+                                    <div class="input-field">
+                                        <span class="field-title">Gender</span>
+                                        <select name="gender-list" id="gender" form="register-form" required>
+                                            <optgroup>
+                                                <option value="" selected disabled hidden>Select Your Gender</option>
+                                                <option value="male">Male</option>
+                                                <option value="female">Female</option>
+                                                <option value="other">Other</option>
+                                            </optgroup>
+                                        </select>
+                                    </div>
+
+                                    <div class="input-field">
+                                        <span class="field-title">Country</span>
+                                        <select name="country-list" id="country" form="register-form" disabled="true">
+                                            <optgroup>
+                                                <option value="nigeria">Nigeria</option>
+                                            </optgroup>
+                                        </select>
+                                    </div>
+
+                                    <div class="input-field">
+                                        <span class="field-title">State</span>
+                                        <select name="state-list" id="states" required>
+                                            <optgroup>
+                                                <option value="" selected disabled hidden>Select Your State</option>
+                                                <option value="abuja">Abuja</option>
+                                                <option value="abia">Abia</option>
+                                                <option value="adamawa">Adamawa</option>
+                                                <option value="akwa-ibom">Akwa Ibom</option>
+                                                <option value="anambra">Anambra</option>
+                                                <option value="bauchi">Bauchi</option>
+                                                <option value="baylsa">Bayelsa</option>
+                                                <option value="benue">Benue</option>
+                                                <option value="borno">Borno</option>
+                                                <option value="cross river">Cross River</option>
+                                                <option value="delta">Delta</option>
+                                                <option value="ebonyi">Ebonyi</option>
+                                                <option value="edo">Edo</option>
+                                                <option value="ekiti">Ekiti</option>
+                                                <option value="enugu">Enugu</option>
+                                                <option value="gombe">Gombe</option>
+                                                <option value="imo">Imo</option>
+                                                <option value="jigawa">Jigawa</option>
+                                                <option value="kaduna">Kaduna</option>
+                                                <option value="kano">Kano</option>
+                                                <option value="katsina">Katsina</option>
+                                                <option value="kebbi">Kebbi</option>
+                                                <option value="kogi">Kogi</option>
+                                                <option value="kwara">Kwara</option>
+                                                <option value="lagos">Lagos</option>
+                                                <option value="nassarawa">Nassarawa</option>
+                                                <option value="niger">Niger</option>
+                                                <option value="ogun">Ogun</option>
+                                                <option value="ondo">Ondo</option>
+                                                <option value="osun">Osun</option>
+                                                <option value="oyo">Oyo</option>
+                                                <option value="plateau">Plateau</option>
+                                                <option value="rivers">Rivers</option>
+                                                <option value="sokoto">Sokoto</option>
+                                                <option value="taraba">Taraba</option>
+                                                <option value="yobe">Yobe</option>
+                                                <option value="zamfara">Zamfara</option>
+                                            </optgroup>
+                                        </select>
+                                    </div>
+
+                                    <div class="input-field">
+                                        <span class="field-title">Password</span>
+                                        <input type="password" placeholder="Enter Your Password" required>
+                                    </div>
+
+                                    <div class="input-field">
+                                        <span class="field-title">Confirm Password</span>
+                                        <input type="password" placeholder="Confirm your password" required>
+                                    </div>
+                                </div>
+
+                                <div class="login-div">
+                                    <input type="submit" value="Register" class="login-btn">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="division">
+                        <hr>
+                        <p>Sign up with your social media account</p>
+                    </div>
+
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+
+        <footer><p>iMrVoN © 2022. All Rights Reserved.</p></footer>
+    </div>
+</body>
+</html>
