@@ -36,6 +36,51 @@ main {
     width: 100%;
 }
 
+ol, ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+li {
+    font-size: 1.5rem;
+}
+
+.hobbies-list-items li::marker {
+    color:#FA5E45;
+    content: '\f236';
+    font-size: 2.5rem;
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 700;
+}
+
+.hobbies-list-items li, .priority-list-items li {
+    padding-left: .5em;
+}
+
+.priority-list-items li:nth-child(1)::marker {
+    color:#FA5E45;
+    content: '\31';
+    font-size: 2.5rem;
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 700;
+}
+
+.priority-list-items li:nth-child(2)::marker {
+    color:#FA5E45;
+    content: '\32';
+    font-size: 2.5rem;
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 700;
+}
+
+.priority-list-items li:nth-child(3)::marker {
+    color:#FA5E45;
+    content: '\33';
+    font-size: 2.5rem;
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 700;
+}
+
 #container {
     flex-wrap: wrap;
     display: flex;
@@ -143,30 +188,12 @@ header .menu {
 #content .content .all-personality .personality {
     display: flex;
     flex-direction: column;
-    padding-bottom: 25px;
+    padding-bottom: 50px;
 }
 
 #content .content .all-personality .personality .personality-header {
     color: #FA5E45;
     font-size: 1.5rem;
-}
-
-#content .content .all-personality .personality .hobbies-list {
-    display: flex;
-    column-gap: 5rem;
-}
-
-#content .content .all-personality .personality .hobbies-list .hobbies-item {
-    font-size: 1.3rem;
-}
-
-#content .content .all-personality .personality .priority-list {
-    display: flex;
-    column-gap: 5rem;
-}
-
-#content .content .all-personality .personality .priority-list .priority-item {
-    font-size: 1.3rem;
 }
 
 #content .content .all-personality .personality .skill-list {
@@ -207,6 +234,10 @@ header .menu {
         align-items: center;
         width: 100%;
         text-align: center;
+    }
+
+    li {
+        text-align: initial;
     }
 
     header .menu {
@@ -328,25 +359,19 @@ header .menu {
         font-weight: 700;
     }
     
-    #content .content .all-personality .personality .hobbies-list {
+    #content .content .all-personality .personality .hobbies-list .hobbies-list-items {
         display: flex;
         flex-direction: column;
         column-gap: 5rem;
-    }
-    
-    #content .content .all-personality .personality .hobbies-list .hobbies-item {
         font-size: 2rem;
         font-weight: 400;
         text-align: center;
     }
     
-    #content .content .all-personality .personality .priority-list {
+    #content .content .all-personality .personality .priority-list .priority-list-items {
         display: flex;
         flex-direction: column;
         column-gap: 5rem;
-    }
-    
-    #content .content .all-personality .personality .priority-list .priority-item {
         font-size: 2rem;
         font-weight: 400;
         text-align: center;
